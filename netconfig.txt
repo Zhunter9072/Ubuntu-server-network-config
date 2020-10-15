@@ -1,0 +1,6 @@
+#Script name : netconfig; October 15,2020
+#This script will get the ip configuration and a list of open ports then send them to the dump file
+#You must run this file as root otherwise it will not run
+today=`date'+%Y_%m_%d'`; #This part ot the script will set the variable 'today' to be yyyy_mm_dd
+ifconfig -a > ./$today.netconfigout; lsof -i -P -n | grep LISTEN >> ./$today.netconfigout
+#End of script
