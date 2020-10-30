@@ -1,8 +1,9 @@
 #Script name : netconfig; October 30,2020
+#!/bin/sh
 #This script will get the ip configuration and a list of open ports then send them to the dump file
 #You must run this file as root otherwise it will not run
 #today=`date'+%Y_%m_%d'`; #This part ot the script will set the variable 'today' to be yyyy_mm_dd
-#ifconfig -a > ./$today.netconfigout; netstat -tulnp >> ./$today.netconfigout #this is just usless code now but im to lazy to delete it :-)
+#ifconfig -a > ./$today.netconfigout; netstat -tulnp >> ./$today.netconfigout
 echo "My hostname is: "
 hostname
 echo "My ipv4 address is: "
